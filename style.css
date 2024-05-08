@@ -227,6 +227,66 @@ header {
     }
 }
 
+/* Number */
+.number-wrapper-outer {
+    display: flex;
+}
+
+.number-heading {
+    width: 50%;
+}
+
+.number-heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    margin-bottom: 40px;
+}
+
+.number {
+    display: block;
+}
+
+.happyclients {
+
+    background: linear-gradient(to bottom right, rgb(255, 207, 145), rgb(255, 111, 92));
+}
+
+.projectProposal {
+    background: linear-gradient(to bottom right, rgb(80, 80, 255), rgb(253, 119, 119));
+}
+
+.runningProject {
+    background: linear-gradient(to bottom right, rgb(107, 107, 255), blue);
+}
+
+.awesomeDesigner {
+    background: linear-gradient(to bottom right, #2af598, #009efd);
+}
+
+.happyclients,
+.projectProposal,
+.runningProject,
+.awesomeDesigner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-heading {
+    padding: 2rem;
+}
+
+.number-img img {
+    width: 650px;
+    height: 500px;
+}
+
+
 /* 2xl */
 @media (max-width: 1536px) {}
 
@@ -256,7 +316,28 @@ header {
 }
 
 /* lg */
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+    .number-img img {
+        width: 550px;
+        height: 400px;
+    }
+
+    /* Services */
+    .number-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+        grid-gap: 1em;
+        padding: 1rem;
+    }
+
+    .happyclients h2,
+    .projectProposal h2,
+    .runningProject h2,
+    .awesomeDesigner h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
 
 /* md */
 @media (max-width: 768px) {
@@ -317,6 +398,19 @@ header {
 
     }
 
+    .number-heading {
+        display: block;
+        width: 100%;
+    }
+
+    .number-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .number-wrapper-outer {
+        display: block;
+    }
 }
 
 /* sm */
@@ -453,6 +547,25 @@ header {
     .circle img {
         width: 100%;
 
+    }
+
+    /* Number */
+    .number-heading {
+        width: 100%;
+        padding: 0;
+    }
+
+    .number-heading h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .number-heading p {
+        font-size: 12px;
+    }
+
+    .number-wrapper-outer {
+        display: block;
     }
 
 }
