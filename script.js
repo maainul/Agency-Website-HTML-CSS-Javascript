@@ -16,3 +16,26 @@ window.addEventListener('scroll', function () {
         scrolltp.style.opacity = 0
     }
 })
+
+// Theme Change
+const themeToggle = document.querySelector('.checkbox')
+const body = document.querySelector('body')
+// Check what save in localstorage 
+// if darkmode save then add classlist darkmode
+const darkMode = localStorage.getItem('dark')
+if (darkMode) {
+    body.classList.add('dark')
+    themeToggle.checked = true
+}
+
+themeToggle.addEventListener('change', function () {
+    body.classList.toggle('dark')
+    // save data local storage to save theme type
+    if (body.classList.contains('dark')) {
+        localStorage.setItem('dark', 'active')
+    } else {
+        localStorage.removeItem('dark')
+    }
+
+
+})

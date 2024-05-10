@@ -619,6 +619,97 @@ svg {
 
 }
 
+/* Theme Toggle */
+.theme {
+    position: absolute;
+    top: 30px;
+    left: 30%;
+}
+
+
+.label {
+    width: 50px;
+    height: 20px;
+    background: rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.label .ball {
+    width: 15px;
+    height: 15px;
+    background: #282f59;
+    border-radius: 50%;
+    margin: 5px;
+    transition: transform 0.5s;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked~.label {
+    background: #282f59;
+}
+
+.checkbox:checked~.label .ball {
+    background-color: whitesmoke;
+    transform: translateX(25px);
+}
+
+
+/* Dark Mode Colors */
+body.dark {
+    background-color: #282f59;
+}
+
+body.dark p {
+    color: #CBCDDA;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6 {
+    color: whitesmoke;
+}
+
+body.dark .section-heading {
+    color: whitesmoke;
+}
+
+body.dark .sub-heading {
+    color: whitesmoke;
+}
+
+body.dark .single-testimonial {
+    background-color: #282f59;
+    border: 1px solid gray;
+}
+
+body.dark .single-testimonial h2 {
+    color: #CBCDDA;
+
+}
+
+body.dark .single__blog:hover {
+    background-color: #282f51;
+}
+
+body.dark .single__blog:hover img {
+    transform: scale(1.01);
+    transition: transform 0.5s ease;
+}
+
+body.dark .website-title {
+    color: whitesmoke;
+}
+
 /* 2xl */
 @media (max-width: 1536px) {}
 
