@@ -44,6 +44,7 @@ li {
     font-size: 2rem;
 }
 
+
 /* Navigation Bar */
 header {
     background-image: url('images/header-bg.png');
@@ -602,6 +603,20 @@ svg {
     color: grey;
     padding: 30px;
     font-weight: 400;
+    position: relative;
+}
+
+#scrolltp {
+    color: white;
+    background-color: tomato;
+    padding: 15px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+
 }
 
 /* 2xl */
